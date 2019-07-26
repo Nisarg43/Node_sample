@@ -1,0 +1,76 @@
+Get Customer list
+curl -X GET \
+  http://localhost:8080/api/customers \
+  -H 'Accept: */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ImJpelRlY2giLCJpYXQiOjE1NTkzNzYxMDR9.-EEvsU9EXHbzUZE46IiXdz4agdS04A3nyvmGJpL9f_s' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Host: localhost:8080' \
+  -H 'Postman-Token: 66e12bf9-c911-4213-b839-a35588e64a86,a29c8668-7eac-4589-bca7-333001327003' \
+  -H 'User-Agent: PostmanRuntime/7.13.0' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'cache-control: no-cache'
+
+Create New
+
+curl -X POST \
+  http://localhost:8080/api/customers \
+  -H 'Accept: */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ImJpelRlY2giLCJpYXQiOjE1NTkzNzYxMDR9.-EEvsU9EXHbzUZE46IiXdz4agdS04A3nyvmGJpL9f_s' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/json' \
+  -H 'Host: localhost:8080' \
+  -H 'Postman-Token: 4926cb91-fa64-4ced-887b-252de10cf32e,671627f1-a57f-4626-a7a7-1a7fecc8bf2b,31f9fa32-3fff-4312-b665-2cf3fea9e650,f8e187a7-f8c2-4aa0-bcd8-3543a1342d43' \
+  -H 'User-Agent: PostmanRuntime/7.13.0' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'cache-control: no-cache,no-cache,no-cache' \
+  -H 'content-length: 21813' \
+  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
+  -F 'name=kuldeep 2' \
+  -F profile=@/Users/admin/Downloads/hello-1379252__340.jpg \
+  -F contact=9723397480 \
+  -F city=Amd \
+  -F state=GUJ
+
+Remove customers
+
+curl -X DELETE \
+  http://localhost:8080/api/customers/ \
+  -H 'Accept: */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ImJpelRlY2giLCJpYXQiOjE1NTkzNzYxMDR9.-EEvsU9EXHbzUZE46IiXdz4agdS04A3nyvmGJpL9f_s' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/json' \
+  -H 'Host: localhost:8080' \
+  -H 'Postman-Token: 4f00fa89-b79c-41dd-bbd6-a770f3dfd4cb,d79bef93-9667-4658-8055-ebb8701f144f' \
+  -H 'User-Agent: PostmanRuntime/7.13.0' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'cache-control: no-cache' \
+  -H 'content-length: 36' \
+  -d '{
+	"id":"5cf2332de3a4bd42e7e4dbc8"
+}'
+
+
+update 
+
+curl -X PATCH \
+  http://localhost:8080/api/customers \
+  -H 'Accept: */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ImJpelRlY2giLCJpYXQiOjE1NTkzNzYxMDR9.-EEvsU9EXHbzUZE46IiXdz4agdS04A3nyvmGJpL9f_s' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Host: localhost:8080' \
+  -H 'Postman-Token: 496ad6d1-36b2-434c-bc96-d41f0691f4be,e9dc546f-85cb-4565-9301-225eb1d2d839' \
+  -H 'User-Agent: PostmanRuntime/7.13.0' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'cache-control: no-cache' \
+  -H 'content-length: 21923' \
+  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
+  -F name=k \
+  -F contact=9723397 \
+  -F city=k \
+  -F state=k \
+  -F id=5cf2338a92d30e474807fa95 \
+  -F profile=@/Users/admin/Downloads/hello-1379252__340.jpg
